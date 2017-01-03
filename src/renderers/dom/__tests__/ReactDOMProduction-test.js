@@ -97,10 +97,10 @@ describe('ReactDOMProduction', function() {
       var container = document.createElement('div');
       ReactDOM.render(<Component />, container);
     }).toThrowError(
-      'Minified React error #109; visit ' +
-      'http://facebook.github.io/react/docs/error-decoder.html?invariant=109&args[]=Component' +
-      ' for the full message or use the non-minified dev environment' +
-      ' for full errors and additional helpful warnings.'
+      'Minified React error #109' // + '; visit ' +
+      // 'http://facebook.github.io/react/docs/error-decoder.html?invariant=109&args[]=Component' +
+      // ' for the full message or use the non-minified dev environment' +
+      // ' for full errors and additional helpful warnings.'
     );
   });
 });
